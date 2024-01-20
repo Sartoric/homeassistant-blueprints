@@ -1,6 +1,6 @@
 blueprint:
   name: Motion-activated Light with luminosity threshold
-  description: Turn on a light when motion is detected.
+  description: Turn on a light when motion is detected in certain luminosity condition.
   domain: automation
   source_url: https://github.com/Sartoric/homeassistant-blueprints/blob/main/motion-light-darkness.yaml
   author: Sartoric
