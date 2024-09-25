@@ -42,12 +42,6 @@ blueprint:
         entity:
           filter:
             domain: binary_sensor        
-    motion_condition_value:  
-      name: Motion condition value   
-      selector:
-        state:
-          filter:
-            domain: state          
 
 # If motion is detected within the delay,
 # we restart the script.
@@ -65,7 +59,7 @@ condition:
     below: !input motion_entity_luminosity
   - condition: state
     entity_id: !input motion_condition
-    state: !input motion_condition_value
+    state: "off"
 action:
   - alias: "Turn on the light"
     service: light.turn_on
