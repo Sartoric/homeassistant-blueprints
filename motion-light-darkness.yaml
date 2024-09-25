@@ -65,7 +65,7 @@ condition:
     below: !input motion_entity_luminosity
   - condition: state
     entity_id: !input motion_condition
-    state: !input
+    state: !input motion_condition_value
 action:
   - alias: "Turn on the light"
     service: light.turn_on
