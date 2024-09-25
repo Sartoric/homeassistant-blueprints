@@ -42,8 +42,8 @@ blueprint:
         entity:
           filter:
             domain: binary_sensor        
-        motion_condition:  
-    name: Motion condition value   
+    motion_condition_value:  
+      name: Motion condition value   
       selector:
         entity:
           filter:
