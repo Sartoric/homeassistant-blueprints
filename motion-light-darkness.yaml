@@ -35,7 +35,13 @@ blueprint:
         number:
           min: 0
           max: 3600
-          unit_of_measurement: lx          
+          unit_of_measurement: lx     
+    motion_condition:  
+      name: Motion condition
+      selector:
+        entity:
+          filter:
+            domain: binary_sensor           
 
 # If motion is detected within the delay,
 # we restart the script.
