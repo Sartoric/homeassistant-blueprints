@@ -47,8 +47,7 @@ blueprint:
       selector:
         entity:
           filter:
-            device_class: motion
-            domain: state            
+            domain: device_state_attributes            
 
 # If motion is detected within the delay,
 # we restart the script.
