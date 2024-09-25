@@ -58,7 +58,7 @@ condition:
     entity_id: sensor.motion_luminosity
     below: !input motion_entity_luminosity
   - condition: state
-    entity_id: binary_sensor.cucina_person_occupancy
+    entity_id: !input motion_condition
     state: "on"
 action:
   - alias: "Turn on the light"
