@@ -45,7 +45,7 @@ blueprint:
     motion_condition_value:  
       name: Motion condition value   
       selector:
-        entity:
+        state:
           filter:
             domain: device_state_attributes            
 
